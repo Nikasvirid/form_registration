@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple form registration</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="menu-btn material-symbols-rounded">&#9776;</span>
+            <a href="#"class="logo"aria-label="read">
+                <!-- <img src="./images/veronikaLogo" alt="navlogo"> -->
+                <h2>Svirid</h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">&#x2716;</span>
+                <li><a href="#"aria-label="ulli">Home</a></li>
+                <li><a href="#"aria-label="ulli">About us</a></li>
+                <li><a href="#"aria-label="ulli">Portfolio</a></li>
+                <li><a href="#"aria-label="ulli">Courses</a></li>
+                <li><a href="#"aria-label="ulli">Contact us</a></li>   
+            </ul>
+            <button class="login-btn" type="button">LOG IN</button>
+        </nav>
+    </header>
+    <div class="blur-effect"></div>
+    <div class="form-popup"> 
+        <span class="close-btn material-symbols-rounded">&#x2716;</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>You have account?</h2>
+                <p>Please, log in your personal information</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="email" name="email"requared autocomplete="off">
+                        <label for="email">Email</label>
+                    </div> 
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass" arria-label="forgotPass">Forgot password?</a>
+                    <button type="submit">Log in</button>
+                </form>    
+                <div class="bottom-link">
+                    Do You have an account?
+                    <a href="#"id="signup-link"arria-label="bottomLink">Signup</a>
+                </div>       
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>Please, sign up</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="createEmail" name="createEmail" required>
+                        <label for="createEmail">Enter your email</label>
+                    </div> 
+                    <div class="input-field">
+                        <input type="password" id="createPassword" name="createPassword" required>
+                        <label for="createPassword">Create password</label>
+                    </div> 
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy" aria-label="policy">
+                        <label for="policy">
+                            I agree
+                            <a href="#">Condition</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign up</button>
+                </form>
+                <div class="bottom-link">
+                    Do not have an account?
+                    <a href="#"id="login-link" arria-label="bottomLink">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>   
+<script src="index.js" ></script>   
+</body>
+</html>
